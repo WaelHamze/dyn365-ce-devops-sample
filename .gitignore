@@ -3,3 +3,22 @@
 ################################################################################
 
 /.vs
+/Sample/Xrm.CI.Framework.Sample/.vs
+/Sample/Xrm.CI.Framework.Sample/packages
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.CI.Tools/obj/Debug
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.CI.Tools/bin
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.CRMPackage/bin/Debug
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.CRMPackage/obj
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.Plugins/bin/Debug
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.Plugins/obj
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.UIAutomation/bin/Debug
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.UIAutomation/obj
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.WebResources/bin
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.WebResources/obj
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.WFActivities/bin/Debug
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.WFActivities/obj
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.CI.Tools/obj/Release
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.CRMPackage/bin/Release
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.Plugins/bin/Release
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.UIAutomation/bin/Release
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.WFActivities/bin/Release
