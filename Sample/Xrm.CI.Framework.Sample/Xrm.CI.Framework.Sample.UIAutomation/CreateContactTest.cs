@@ -29,7 +29,7 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
         [TestMethod]
         public void CreateNewContact()
         {
-            using (var xrmBrowser = new XrmBrowser(_options))
+            using (var xrmBrowser = new Browser(_options))
             {
                 xrmBrowser.LoginPage.Login(_xrmUri, _username, _password);
                 xrmBrowser.GuidedHelp.CloseGuidedHelp();
