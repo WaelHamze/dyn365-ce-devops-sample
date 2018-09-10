@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,18 @@ namespace Xrm.CI.Framework.Sample.CRMPackage
         /// </summary>
         public override void InitializeCustomExtension()
         {
-            // Do nothing. 
+            if (RuntimeSettings != null)
+            {
+                PackageLog.Log(string.Format("Runtime Settings populated.  Count = {0}", RuntimeSettings.Count), TraceEventType.Verbose);
+                foreach (var setting in RuntimeSettings)
+                {
+                    PackageLog.Log(string.Format("Key={0} | Value={1}", setting.Key, setting.Value.ToString()), TraceEventType.Verbose);
+                }
+            }
+            else
+            {
+                PackageLog.Log("Runtime Settings not populated", TraceEventType.Verbose);
+            }
         }
 
         /// <summary>
