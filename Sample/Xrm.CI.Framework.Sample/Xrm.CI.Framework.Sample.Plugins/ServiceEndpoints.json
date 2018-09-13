@@ -1,0 +1,35 @@
+﻿[
+  {
+    "Id": "53d53d7d-c4b6-e811-a977-002248005d88",
+    "Name": "SampleWebHook",
+    "NamespaceAddress": null,
+    "Contract": "Webhook",
+    "Path": " ",
+    "MessageFormat": "Json",
+    "AuthType": "WebhookKey",
+    "SASKeyName": null,
+    "SASKey": null,
+    "SASToken": null,
+    "UserClaim": "None",
+    "Description": null,
+    "Url": "__EchoUrl__",
+    "AuthValue": "__EchoCode__",
+    "Steps": [
+      {
+        "Id": "fb3e63a1-c4b6-e811-a976-0022480050c6",
+        "Name": "SampleWebHook: Create of account",
+        "MessageName": "Create",
+        "Description": "SampleWebHook: Create of account",
+        "CustomConfiguration": null,
+        "FilteringAttributes": null,
+        "ImpersonatingUserFullname": "",
+        "Mode": "Synchronous",
+        "PrimaryEntityName": "account",
+        "Rank": 1,
+        "Stage": "Preoperation",
+        "SupportedDeployment": "ServerOnly",
+        "Images": []
+      }
+    ]
+  }
+]

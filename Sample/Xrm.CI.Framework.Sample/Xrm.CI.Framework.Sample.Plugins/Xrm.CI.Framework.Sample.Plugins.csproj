@@ -67,10 +67,13 @@
     <Compile Include="AccountSampleActionPreOperation.cs" />
     <Compile Include="AccountPostCreateAsync.cs" />
     <Compile Include="ContactPreOperation.cs" />
+    <None Include="GetServiceEndpoints.ps1" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="ServiceEndpoints.json" />
     <None Include="PluginRegistration.json" />
+    <None Include="UpdateServiceEndpoints.ps1" />
     <None Include="UpdatePluginRegistration.ps1" />
     <None Include="GetPluginRegistration.ps1" />
     <Compile Include="Properties\AssemblyInfo.cs" />

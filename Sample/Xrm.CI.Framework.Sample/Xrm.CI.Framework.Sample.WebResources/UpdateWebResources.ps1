@@ -27,4 +27,4 @@ $SolutionName = "xRMCISample"
 $FailIfWebResourceNotFound = $true
 $Timeout = 120
 
-& "$scriptPath\..\packages\XrmCIFramework.9.0.0.17\tools\UpdateFoldersWebResources.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -WebResourceFolderPath $WebResourceFolderPath -SearchPattern $SearchPattern -RegExToMatchUniqueName $RegExToMatchUniqueName -IncludeFileExtensionForUniqueName $IncludeFileExtensionForUniqueName -SolutionName $SolutionName -Publish $Publish -FailIfWebResourceNotFound $FailIfWebResourceNotFound -Timeout $Timeout
+& "$scriptPath\..\packages\XrmCIFramework.9.0.0.23\tools\UpdateFoldersWebResources.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -WebResourceFolderPath $WebResourceFolderPath -SearchPattern $SearchPattern -RegExToMatchUniqueName $RegExToMatchUniqueName -IncludeFileExtensionForUniqueName $IncludeFileExtensionForUniqueName -SolutionName $SolutionName -Publish $Publish -FailIfWebResourceNotFound $FailIfWebResourceNotFound -Timeout $Timeout
