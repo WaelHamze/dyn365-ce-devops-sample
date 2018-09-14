@@ -14,10 +14,19 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
     {
         public TestContext TestContext { get; set; }
 
-        private readonly SecureString _username = Environment.GetEnvironmentVariable("CRMUser", EnvironmentVariableTarget.User).ToSecureString();
-        private readonly SecureString _password = Environment.GetEnvironmentVariable("CRMPassword", EnvironmentVariableTarget.User).ToSecureString();
-        private readonly Uri _xrmUri = new Uri(Environment.GetEnvironmentVariable("CRMUrl", EnvironmentVariableTarget.User));
+        private readonly SecureString _username = CreateContactTest.GetConfigValue("CrmUsername").ToSecureString();
+        private readonly SecureString _password = CreateContactTest.GetConfigValue("CrmPassword").ToSecureString();
+        private readonly Uri _xrmUri = new Uri(CreateContactTest.GetConfigValue("CrmUrl"));
 
+        private static string GetConfigValue(string name)
+        {
+            string value = Environment.GetEnvironmentVariable(name);
+            if (string.IsNullOrEmpty(value))
+                value = ConfigurationManager.AppSettings[name];
+            if (string.IsNullOrEmpty(value))
+                throw new NotFoundException(name);
+            return value;
+        }
 
         private readonly BrowserOptions _options = new BrowserOptions
         {
