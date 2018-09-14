@@ -10,8 +10,15 @@
   <OrganizationSettings />
   <optionsets />
   <WebResources />
+  <CustomControls />
+  <SolutionPluginAssemblies />
+  <SdkMessageProcessingSteps />
+  <ServiceEndpoints />
   <EntityDataProviders />
   <Languages>
     <Language>1033</Language>
+    <Language>1045</Language>
+    <Language>1081</Language>
+    <Language>1025</Language>
   </Languages>
 </ImportExportXml>

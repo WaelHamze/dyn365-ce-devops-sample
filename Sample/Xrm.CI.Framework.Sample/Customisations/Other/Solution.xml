@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.0.0000.2180" SolutionPackageVersion="9.0" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.0.2.2074" SolutionPackageVersion="9.0" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>xRMCISample</UniqueName>
     <LocalizedNames>
       <LocalizedName description="xRMCISample" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.0</Version>
+    <Version>1.0.0.4</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>ultradynamics</UniqueName>
@@ -79,9 +79,23 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="29" id="{8851d4a1-7aeb-48dc-afa3-0e6f27de04b2}" behavior="0" />
+      <RootComponent type="60" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
       <RootComponent type="61" schemaName="ud_/HTML/Dashboard.html" behavior="0" />
-      <RootComponent type="61" schemaName="ud_JScript/Contact.js" behavior="0" />
+      <RootComponent type="61" schemaName="ud_/JScript/Contact.js" behavior="0" />
+      <RootComponent type="91" id="{e091c0c0-2d49-e811-a957-0022480050c6}" schemaName="Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf" behavior="0" />
+      <RootComponent type="91" id="{ca934c19-3a47-e811-a956-00224800510b}" schemaName="Xrm.CI.Framework.Sample.WFActivities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d805730d823d6a57" behavior="0" />
+      <RootComponent type="92" id="{1269d7d8-c4aa-e811-a974-0022480050c6}" behavior="0" />
+      <RootComponent type="92" id="{636afac1-2d49-e811-a957-0022480053e9}" behavior="0" />
+      <RootComponent type="92" id="{bbffd4c1-2d49-e811-a956-00224800510b}" behavior="0" />
+      <RootComponent type="92" id="{fb3e63a1-c4b6-e811-a976-0022480050c6}" behavior="0" />
+      <RootComponent type="95" id="{53d53d7d-c4b6-e811-a977-002248005d88}" behavior="0" />
     </RootComponents>
-    <MissingDependencies />
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="60" displayName="Contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
+        <Dependent key="0" type="60" displayName="Contact" parentDisplayName="Contact" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>

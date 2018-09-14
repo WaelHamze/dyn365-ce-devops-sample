@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceEndpoints>
+  <ServiceEndpoint ServiceEndpointId="{53d53d7d-c4b6-e811-a977-002248005d88}" Name="SampleWebHook">
+    <ConnectionMode>1</ConnectionMode>
+    <Contract>8</Contract>
+    <Path></Path>
+    <SolutionNamespace></SolutionNamespace>
+    <UserClaim>1</UserClaim>
+    <IsCustomizable>1</IsCustomizable>
+    <AuthType>4</AuthType>
+    <MessageFormat>2</MessageFormat>
+    <NamespaceFormat>1</NamespaceFormat>
+    <Url>https://uddev.azurewebsites.net/api/Echo</Url>
+  </ServiceEndpoint>
+</ServiceEndpoints>

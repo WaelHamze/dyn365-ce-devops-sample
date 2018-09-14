@@ -12,4 +12,4 @@ Write-Verbose "Script Path: $scriptPath"
 
 Write-Verbose "ConnectionString = $connectionString"
 
-& "$scriptPath\..\..\Lib\xRMCIFramework\9.0.0\PackSolution.ps1" -Verbose -CoreToolsPath "$scriptPath\..\..\Lib\CoreTools\9.0.0\" -unpackedFilesFolder "$scriptPath\..\Customisations" -mappingFile "$scriptPath\mapping.xml" -PackageType Both -TreatPackWarningsAsErrors $true -UpdateVersion $false -OutputPath "C:\temp"
+& "$scriptPath\..\packages\XrmCIFramework.9.0.0.23\tools\PackSolution.ps1" -Verbose -CoreToolsPath "$scriptPath\..\packages\Microsoft.CrmSdk.CoreTools.9.0.2.4\content\bin\coretools" -unpackedFilesFolder "$scriptPath\..\Customisations" -mappingFile "$scriptPath\mapping.xml" -PackageType Both -TreatPackWarningsAsErrors $false -UpdateVersion $false -OutputPath "C:\temp"
