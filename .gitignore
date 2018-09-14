@@ -22,3 +22,7 @@
 /Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.Plugins/bin/Release
 /Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.UIAutomation/bin/Release
 /Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.WFActivities/bin/Release
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.IntegrationTests/bin/Debug
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.IntegrationTests/obj/Debug
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.Plugins.UnitTests/bin
+/Sample/Xrm.CI.Framework.Sample/Xrm.CI.Framework.Sample.Plugins.UnitTests/obj
