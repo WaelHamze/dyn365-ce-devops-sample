@@ -15,7 +15,7 @@ Write-Verbose "ConnectionString = $connectionString"
 
 if ($CrmConnectionString -eq '')
 {
-	$CrmConnectionString = $Env:CrmCon
+	$CrmConnectionString = $Env:CrmConnection
 }
 $AssemblyName = 'Xrm.CI.Framework.Sample.WFActivities.dll'
 $MappingFile = "$scriptPath\PluginRegistration.json"

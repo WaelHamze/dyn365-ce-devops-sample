@@ -15,7 +15,7 @@ Write-Verbose "ConnectionString = $connectionString"
 
 if ($CrmConnectionString -eq '')
 {
-	$CrmConnectionString = $Env:CrmCon
+	$CrmConnectionString = $Env:CrmConnection
 }
 $AssemblyPath = "$scriptPath\bin\Debug\Xrm.CI.Framework.Sample.Plugins.dll"
 $SolutionName = 'xRMCISample'
@@ -23,4 +23,4 @@ $MappingFile = "$scriptPath\PluginRegistration.json"
 $RegistrationType = "upsert"
 $Timeout = 360
 
-& "$scriptPath\..\packages\XrmCIFramework.9.0.0.21\tools\PluginRegistration.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -AssemblyPath "$AssemblyPath" -MappingFile "$MappingFile" -SolutionName $SolutionName -RegistrationType $RegistrationType -Timeout $Timeout
+& "$scriptPath\..\packages\XrmCIFramework.9.0.0.23\tools\PluginRegistration.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -AssemblyPath "$AssemblyPath" -MappingFile "$MappingFile" -SolutionName $SolutionName -RegistrationType $RegistrationType -Timeout $Timeout

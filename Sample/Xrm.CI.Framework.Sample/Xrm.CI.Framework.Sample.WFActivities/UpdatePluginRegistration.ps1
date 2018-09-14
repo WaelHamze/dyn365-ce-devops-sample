@@ -15,7 +15,7 @@ Write-Verbose "ConnectionString = $connectionString"
 
 if ($CrmConnectionString -eq '')
 {
-	$CrmConnectionString = $Env:CrmCon
+	$CrmConnectionString = $Env:CrmConnection
 }
 $AssemblyPath = "$scriptPath\bin\Debug\Xrm.CI.Framework.Sample.WFActivities.dll"
 $SolutionName = 'xRMCISample'

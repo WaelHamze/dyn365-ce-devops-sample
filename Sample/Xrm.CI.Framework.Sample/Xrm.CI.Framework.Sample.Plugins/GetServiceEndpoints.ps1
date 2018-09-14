@@ -15,7 +15,7 @@ Write-Verbose "ConnectionString = $connectionString"
 
 if ($CrmConnectionString -eq '')
 {
-	$CrmConnectionString = $Env:CrmCon
+	$CrmConnectionString = $Env:CrmConnection
 }
 $MappingFile = "$scriptPath\ServiceEndpoints.json"
 $Timeout = 360

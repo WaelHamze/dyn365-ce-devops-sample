@@ -15,10 +15,10 @@ Write-Verbose "ConnectionString = $connectionString"
 
 if ($CrmConnectionString -eq '')
 {
-	$CrmConnectionString = $Env:CrmCon
+	$CrmConnectionString = $Env:CrmConnection
 }
 $AssemblyName = 'Xrm.CI.Framework.Sample.Plugins.dll'
 $MappingFile = "$scriptPath\PluginRegistration.json"
 $Timeout = 360
 
-& "$scriptPath\..\packages\XrmCIFramework.9.0.0.21\tools\GetPluginRegistration.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -AssemblyName "$AssemblyName" -MappingFile "$MappingFile" -Timeout $Timeout
+& "$scriptPath\..\packages\XrmCIFramework.9.0.0.23\tools\GetPluginRegistration.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -AssemblyName "$AssemblyName" -MappingFile "$MappingFile" -Timeout $Timeout
