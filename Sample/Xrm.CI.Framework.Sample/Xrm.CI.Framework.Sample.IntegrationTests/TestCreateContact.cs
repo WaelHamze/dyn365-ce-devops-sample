@@ -19,13 +19,14 @@ namespace Xrm.CI.Framework.Sample.IntegrationTests
                 Entity c = new Entity("contact");
 
                 c["firstname"] = "Test";
+                c["lastname"] = DateTime.Now.Date.ToShortDateString();
 
                 c.Id = svc.Create(c);
             }
         }
         private static string GetConfigValue(string name)
         {
-            string value = Environment.GetEnvironmentVariable(name);
+            string value = Environment.GetEnvironmentVariable(name, EnvironmentVariableTarget.User);
             if (string.IsNullOrEmpty(value))
                 value = ConfigurationManager.ConnectionStrings[name].ConnectionString;
             if (string.IsNullOrEmpty(value))

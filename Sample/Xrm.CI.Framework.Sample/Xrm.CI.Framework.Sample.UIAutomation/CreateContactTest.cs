@@ -20,7 +20,7 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
 
         private static string GetConfigValue(string name)
         {
-            string value = Environment.GetEnvironmentVariable(name);
+            string value = Environment.GetEnvironmentVariable(name, EnvironmentVariableTarget.User);
             if (string.IsNullOrEmpty(value))
                 value = ConfigurationManager.AppSettings[name];
             if (string.IsNullOrEmpty(value))
@@ -62,7 +62,7 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
                 xrmBrowser.Entity.SetValue(new CompositeControl() { Id = "fullname", Fields = fields });
                 xrmBrowser.Entity.SetValue("emailaddress1", "test@contoso.com");
                 xrmBrowser.Entity.SetValue("mobilephone", "555-555-5555");
-                xrmBrowser.Entity.SetValue("birthdate", DateTime.Parse("11/1/1980"));
+                xrmBrowser.Entity.SetValue("birthdate", DateTime.Parse("11/1/1983"));
                 xrmBrowser.Entity.SetValue(new OptionSet { Name = "preferredcontactmethodcode", Value = "Email" });
 
                 xrmBrowser.CommandBar.ClickCommand("Save");

@@ -2,7 +2,6 @@
 
 param
 (
-	[string]$connectionString #The connection string as per CRM Sdk
 )
 
 $ErrorActionPreference = "Stop"

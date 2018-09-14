@@ -19,6 +19,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xrm.CI.Framework.Sample.Plu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xrm.CI.Framework.Sample.IntegrationTests", "Xrm.CI.Framework.Sample.IntegrationTests\Xrm.CI.Framework.Sample.IntegrationTests.csproj", "{A5CBE748-6FA8-471E-BAD1-42E2A65E8BB1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{E30B24F8-8227-4ECE-BE6D-002FEEEFD4F1}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\Extract.ps1 = Scripts\Extract.ps1
+		Scripts\mapping.xml = Scripts\mapping.xml
+		Scripts\Pack.ps1 = Scripts\Pack.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
