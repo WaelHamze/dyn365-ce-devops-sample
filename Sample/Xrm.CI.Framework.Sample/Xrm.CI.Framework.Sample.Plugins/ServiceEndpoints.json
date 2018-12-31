@@ -28,6 +28,8 @@
         "Rank": 1,
         "Stage": "Preoperation",
         "SupportedDeployment": "ServerOnly",
+        "AsyncAutoDelete": false,
+        "StateCode": "Enabled",
         "Images": []
       }
     ]
