@@ -20,4 +20,4 @@ if ($CrmConnectionString -eq '')
 $MappingFile = "$scriptPath\ServiceEndpoints.json"
 $Timeout = 360
 
-& "$scriptPath\..\packages\XrmCIFramework.9.0.0.23\tools\GetServiceEndpointRegistration.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -MappingFile "$MappingFile" -Timeout $Timeout
+& "$scriptPath\..\packages\XrmCIFramework.9.0.0.27\tools\GetServiceEndpointRegistration.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -MappingFile "$MappingFile" -Timeout $Timeout

@@ -23,4 +23,4 @@ $MappingFile = "$scriptPath\ServiceEndpoints.json"
 $RegistrationType = "upsert"
 $Timeout = 360
 
-& "$scriptPath\..\packages\XrmCIFramework.9.0.0.23\tools\ServiceEndpointRegistration.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -AssemblyPath -MappingFile "$MappingFile" -SolutionName $SolutionName -RegistrationType $RegistrationType -Timeout $Timeout
+& "$scriptPath\..\packages\XrmCIFramework.9.0.0.27\tools\ServiceEndpointRegistration.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -AssemblyPath -MappingFile "$MappingFile" -SolutionName $SolutionName -RegistrationType $RegistrationType -Timeout $Timeout
