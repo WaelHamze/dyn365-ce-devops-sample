@@ -13,42 +13,6 @@
         <Description description="Person with whom a business unit has a relationship, such as customer, supplier, and colleague." languagecode="1033" />
       </Descriptions>
       <attributes>
-        <attribute PhysicalName="ud_365Saturday">
-          <Type>nvarchar</Type>
-          <Name>ud_365saturday</Name>
-          <LogicalName>ud_365saturday</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.18</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <Format>text</Format>
-          <MaxLength>100</MaxLength>
-          <Length>200</Length>
-          <displaynames>
-            <displayname description="365Saturday" languagecode="1033" />
-          </displaynames>
-          <Descriptions>
-            <Description description="" languagecode="1033" />
-          </Descriptions>
-        </attribute>
         <attribute PhysicalName="ud_summit">
           <Type>nvarchar</Type>
           <Name>ud_summit</Name>
