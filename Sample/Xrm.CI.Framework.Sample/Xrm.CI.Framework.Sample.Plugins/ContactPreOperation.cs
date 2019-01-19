@@ -11,7 +11,7 @@ namespace Xrm.CI.Framework.Sample.Plugins
     {
         public void Execute(IServiceProvider serviceProvider)
         {
-            //throw new NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }

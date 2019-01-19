@@ -49,7 +49,7 @@
         {
           "Id": "bbffd4c1-2d49-e811-a956-00224800510b",
           "Name": "Xrm.CI.Framework.Sample.Plugins.ContactPreOperation",
-          "MessageName": "Create",
+          "MessageName": "Update",
           "Description": "Contact Pre Operation Step",
           "CustomConfiguration": null,
           "FilteringAttributes": null,
