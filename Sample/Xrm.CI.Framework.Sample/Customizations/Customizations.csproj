@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Solutions\ImportConfig.json" />
+    <None Include="Solutions\ExportConfig.json" />
     <None Include="Solutions\PackConfig.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
