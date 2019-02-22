@@ -1,0 +1,18 @@
+{
+  "Solutions": [
+    {
+      "SolutionFilePath": "xRMCISample_managed.zip",
+      "PublishWorkflows": true,
+      "ConvertToManaged": false,
+      "OverwriteUnmanagedCustomizations": true,
+      "SkipProductUpdateDependencies": false,
+      "HoldingSolution": false,
+      "OverrideSameVersion": true,
+      "ImportAsync": true,
+      "ApplySolution": false,
+      "ApplyAsync": false,
+      "SleepInterval": 15,
+      "AsyncWaitTimeout": 900
+    }
+  ]
+}
