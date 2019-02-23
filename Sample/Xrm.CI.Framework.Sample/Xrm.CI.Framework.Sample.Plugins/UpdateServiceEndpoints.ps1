@@ -2,7 +2,8 @@
 
 param
 (
-	[string]$CrmConnectionString #The connection string as per CRM Sdk
+    [string]$CrmConnectionString, #The connection string as per CRM Sdk
+	[string]$Key #The key for the stored connection string
 )
 
 $ErrorActionPreference = "Stop"
@@ -13,9 +14,27 @@ Write-Verbose "Script Path: $scriptPath"
 
 Write-Verbose "ConnectionString = $connectionString"
 
-if ($CrmConnectionString -eq '')
+$matches = Get-ChildItem -Path "$scriptPath\..\packages\XrmCIFramework.*" | Sort-Object Name -Descending
+if ($matches.Length -gt 0)
 {
-	$CrmConnectionString = $Env:CrmConnection
+	$frameworkPath = $matches[0].FullName
+	Write-Verbose "Using XrmCIFramework: $frameworkPath"
+}
+else
+{
+	throw "XrmCIFramework not found in nuget packages"
+}
+
+Import-Module "$frameworkPath\tools\Xrm.Framework.CI.PowerShell.Cmdlets.psd1"
+
+if ($CrmConnectionString)
+{
+	Write-Verbose "Using supplied connection string"
+}
+else
+{
+	Write-Verbose "Using connection store"
+	$CrmConnectionString = GetXrmConnectionFromConfig($key);
 }
 
 $SolutionName = 'xRMCISample'
@@ -23,4 +42,4 @@ $MappingFile = "$scriptPath\ServiceEndpoints.json"
 $RegistrationType = "upsert"
 $Timeout = 360
 
-& "$scriptPath\..\packages\XrmCIFramework.9.0.0.31\tools\ServiceEndpointRegistration.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -AssemblyPath -MappingFile "$MappingFile" -SolutionName $SolutionName -RegistrationType $RegistrationType -Timeout $Timeout
+& "$frameworkPath\tools\ServiceEndpointRegistration.ps1" -Verbose -CrmConnectionString "$CrmConnectionString" -AssemblyPath -MappingFile "$MappingFile" -SolutionName $SolutionName -RegistrationType $RegistrationType -Timeout $Timeout

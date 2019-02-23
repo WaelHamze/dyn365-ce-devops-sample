@@ -3,6 +3,7 @@
   "Name": "Xrm.CI.Framework.Sample.Plugins.dll",
   "IsolationMode": "Sandbox",
   "SourceType": "Database",
+  "Version": "1.0.0.0",
   "PluginTypes": [
     {
       "Id": "b8ffd4c1-2d49-e811-a956-00224800510b",
@@ -49,7 +50,7 @@
         {
           "Id": "bbffd4c1-2d49-e811-a956-00224800510b",
           "Name": "Xrm.CI.Framework.Sample.Plugins.ContactPreOperation",
-          "MessageName": "Update",
+          "MessageName": "Create",
           "Description": "Contact Pre Operation Step",
           "CustomConfiguration": null,
           "FilteringAttributes": null,
