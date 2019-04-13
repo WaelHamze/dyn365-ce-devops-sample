@@ -21,9 +21,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xrm.CI.Framework.Sample.Int
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{E30B24F8-8227-4ECE-BE6D-002FEEEFD4F1}"
 	ProjectSection(SolutionItems) = preProject
-		Scripts\Extract.ps1 = Scripts\Extract.ps1
-		Scripts\mapping.xml = Scripts\mapping.xml
-		Scripts\Pack.ps1 = Scripts\Pack.ps1
 		Scripts\UpdateXrmCIFramework.ps1 = Scripts\UpdateXrmCIFramework.ps1
 	EndProjectSection
 EndProject
