@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.4824" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.6028" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>xRMCISample</UniqueName>
     <LocalizedNames>
       <LocalizedName description="xRMCISample" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.48</Version>
+    <Version>1.0.0.51</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>ultradynamics</UniqueName>
