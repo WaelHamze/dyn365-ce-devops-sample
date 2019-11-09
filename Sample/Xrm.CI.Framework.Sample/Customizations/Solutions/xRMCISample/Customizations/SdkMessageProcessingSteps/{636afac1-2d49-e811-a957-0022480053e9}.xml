@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SdkMessageProcessingStep Name="Xrm.CI.Framework.Sample.Plugins.AccountPostCreateAsync" SdkMessageProcessingStepId="{636afac1-2d49-e811-a957-0022480053e9}">
+<SdkMessageProcessingStep Name="Xrm.CI.Framework.Sample.Plugins.AccountPostCreateAsync" SdkMessageProcessingStepId="{636afac1-2d49-e811-a957-0022480053e9}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <PluginTypeName>Xrm.CI.Framework.Sample.Plugins.AccountPostCreateAsync, Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf</PluginTypeName>
   <PluginTypeId>b8ffd4c1-2d49-e811-a956-00224800510b</PluginTypeId>
   <PrimaryEntity>account</PrimaryEntity>

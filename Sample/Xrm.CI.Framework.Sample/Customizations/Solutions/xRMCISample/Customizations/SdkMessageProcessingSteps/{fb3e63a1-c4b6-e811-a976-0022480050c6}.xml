@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SdkMessageProcessingStep Name="SampleWebHook: Create of account" SdkMessageProcessingStepId="{fb3e63a1-c4b6-e811-a976-0022480050c6}">
+<SdkMessageProcessingStep Name="SampleWebHook: Create of account" SdkMessageProcessingStepId="{fb3e63a1-c4b6-e811-a976-0022480050c6}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <PluginTypeName>Microsoft.Crm.ServiceBus.WebhookPlugin, Microsoft.Crm.ServiceBus, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</PluginTypeName>
   <PluginTypeId>fe4f0cdb-b254-4fa1-84f6-d58d0759b8b3</PluginTypeId>
   <PrimaryEntity>account</PrimaryEntity>

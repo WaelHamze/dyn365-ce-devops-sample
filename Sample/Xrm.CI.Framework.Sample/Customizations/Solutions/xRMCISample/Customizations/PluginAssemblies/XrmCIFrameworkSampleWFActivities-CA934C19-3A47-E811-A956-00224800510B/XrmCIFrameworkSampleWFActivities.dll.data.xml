@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PluginAssembly FullName="Xrm.CI.Framework.Sample.WFActivities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d805730d823d6a57" PluginAssemblyId="ca934c19-3a47-e811-a956-00224800510b" CustomizationLevel="1">
+<PluginAssembly FullName="Xrm.CI.Framework.Sample.WFActivities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d805730d823d6a57" PluginAssemblyId="ca934c19-3a47-e811-a956-00224800510b" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <IsolationMode>2</IsolationMode>
   <SourceType>0</SourceType>
   <IntroducedVersion>1.0</IntroducedVersion>

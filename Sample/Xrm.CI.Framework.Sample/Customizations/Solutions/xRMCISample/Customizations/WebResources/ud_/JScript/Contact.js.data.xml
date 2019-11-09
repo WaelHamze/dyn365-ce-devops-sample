@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WebResource>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebResourceId>{0bd85fa4-3d47-e811-a958-0022480042b3}</WebResourceId>
   <Name>ud_/JScript/Contact.js</Name>
   <DisplayName>Contact.js</DisplayName>

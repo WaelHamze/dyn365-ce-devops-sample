@@ -37,4 +37,4 @@ else
 	$CrmConnectionString = GetXrmConnectionFromConfig($key);
 }
 
-& "$frameworkPath\tools\ExtractSolution.ps1" -Verbose -CoreToolsPath "$scriptPath\..\..\..\packages\Microsoft.CrmSdk.CoreTools.9.0.2.12\content\bin\coretools" -UnpackedFilesFolder "$scriptPath\Customizations" -mappingFile "$scriptPath\mapping.xml" -solutionName "xRMCISample" -solutionFile $null -connectionString "$CrmConnectionString" -TreatPackWarningsAsErrors $false -PackageType "both"
+& "$frameworkPath\tools\ExtractSolution.ps1" -Verbose -CoreToolsPath "$scriptPath\..\..\..\packages\Microsoft.CrmSdk.CoreTools.9.1.0.22\content\bin\coretools" -UnpackedFilesFolder "$scriptPath\Customizations" -mappingFile "$scriptPath\mapping.xml" -solutionName "xRMCISample" -solutionFile $null -connectionString "$CrmConnectionString" -TreatPackWarningsAsErrors $false -PackageType "Both"

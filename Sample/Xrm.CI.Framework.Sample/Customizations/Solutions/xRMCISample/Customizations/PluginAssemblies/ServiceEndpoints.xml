@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceEndpoints>
+<ServiceEndpoints xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ServiceEndpoint ServiceEndpointId="{53d53d7d-c4b6-e811-a977-002248005d88}" Name="SampleWebHook">
     <ConnectionMode>1</ConnectionMode>
     <Contract>8</Contract>

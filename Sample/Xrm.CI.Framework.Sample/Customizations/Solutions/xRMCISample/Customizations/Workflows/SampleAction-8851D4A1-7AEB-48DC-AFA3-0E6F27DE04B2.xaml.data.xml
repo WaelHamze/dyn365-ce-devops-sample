@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{8851d4a1-7aeb-48dc-afa3-0e6f27de04b2}" Name="SampleAction">
+<Workflow WorkflowId="{8851d4a1-7aeb-48dc-afa3-0e6f27de04b2}" Name="SampleAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <XamlFileName>/Workflows/SampleAction-8851D4A1-7AEB-48DC-AFA3-0E6F27DE04B2.xaml</XamlFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
