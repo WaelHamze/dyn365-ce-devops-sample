@@ -30,39 +30,12 @@
           "Images": [
             {
               "Id": "07aca23c-0698-e811-a96a-002248005d88",
-              "Attributes": "name,emailaddress1",
+              "Attributes": "emailaddress1,name",
               "EntityAlias": "Sample",
               "MessagePropertyName": "id",
               "ImageType": "PostImage"
             }
           ]
-        }
-      ],
-      "WorkflowActivityGroupName": null
-    },
-    {
-      "Id": "656afac1-2d49-e811-a957-0022480053e9",
-      "Description": "Contact Pre Operation Plugin",
-      "Name": "Xrm.CI.Framework.Sample.Plugins.ContactPreOperation",
-      "FriendlyName": "Contact Pre Operation Plugin",
-      "TypeName": "Xrm.CI.Framework.Sample.Plugins.ContactPreOperation",
-      "Steps": [
-        {
-          "Id": "bbffd4c1-2d49-e811-a956-00224800510b",
-          "Name": "Xrm.CI.Framework.Sample.Plugins.ContactPreOperation",
-          "MessageName": "Create",
-          "Description": "Contact Pre Operation Step",
-          "CustomConfiguration": null,
-          "FilteringAttributes": null,
-          "ImpersonatingUserFullname": "",
-          "Mode": "Synchronous",
-          "PrimaryEntityName": "contact",
-          "Rank": 1,
-          "Stage": "Preoperation",
-          "SupportedDeployment": "ServerOnly",
-          "AsyncAutoDelete": false,
-          "StateCode": "Enabled",
-          "Images": []
         }
       ],
       "WorkflowActivityGroupName": null
@@ -84,6 +57,33 @@
           "ImpersonatingUserFullname": "",
           "Mode": "Synchronous",
           "PrimaryEntityName": "account",
+          "Rank": 1,
+          "Stage": "Preoperation",
+          "SupportedDeployment": "ServerOnly",
+          "AsyncAutoDelete": false,
+          "StateCode": "Enabled",
+          "Images": []
+        }
+      ],
+      "WorkflowActivityGroupName": null
+    },
+    {
+      "Id": "656afac1-2d49-e811-a957-0022480053e9",
+      "Description": "Contact Pre Operation Plugin",
+      "Name": "Xrm.CI.Framework.Sample.Plugins.ContactPreOperation",
+      "FriendlyName": "Contact Pre Operation Plugin",
+      "TypeName": "Xrm.CI.Framework.Sample.Plugins.ContactPreOperation",
+      "Steps": [
+        {
+          "Id": "bbffd4c1-2d49-e811-a956-00224800510b",
+          "Name": "Xrm.CI.Framework.Sample.Plugins.ContactPreOperation",
+          "MessageName": "Create",
+          "Description": "Contact Pre Operation Step",
+          "CustomConfiguration": null,
+          "FilteringAttributes": null,
+          "ImpersonatingUserFullname": "",
+          "Mode": "Synchronous",
+          "PrimaryEntityName": "contact",
           "Rank": 1,
           "Stage": "Preoperation",
           "SupportedDeployment": "ServerOnly",

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.10123" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.10528" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>xRMCISample</UniqueName>
     <LocalizedNames>
       <LocalizedName description="xRMCISample" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.59</Version>
+    <Version>1.0.0.60</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>ultradynamics</UniqueName>
@@ -90,18 +90,25 @@
       <RootComponent type="92" id="{bbffd4c1-2d49-e811-a956-00224800510b}" behavior="0" />
       <RootComponent type="92" id="{fb3e63a1-c4b6-e811-a976-0022480050c6}" behavior="0" />
       <RootComponent type="95" id="{53d53d7d-c4b6-e811-a977-002248005d88}" behavior="0" />
+      <RootComponent type="380" id="{2987e5cf-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+      <RootComponent type="380" id="{75d11fab-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+      <RootComponent type="380" id="{da9af10a-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+      <RootComponent type="380" id="{e99e9e98-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+      <RootComponent type="381" id="{db39e2d5-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+      <RootComponent type="381" id="{e49af10a-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+      <RootComponent type="381" id="{fd9e9e98-7307-ea11-a811-000d3a86aa92}" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="0" type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Required key="0" type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="2" type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Required key="2" type="1" schemaName="entitlement" displayName="Entitlement" solution="msdynce_Service (9.0.5.56)" />
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="3" type="1" schemaName="entitlement" displayName="Entitlement" solution="msdynce_Service (9.0.5.56)" />
+        <Required key="3" type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>
@@ -109,35 +116,35 @@
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="5" type="26" schemaName="Recent Opportunities" displayName="Recent Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{9c3f7ee8-eca7-e211-9fb6-00155dd0ea05}" />
+        <Required key="5" type="26" schemaName="Recent Cases" displayName="Recent Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{ebd1d24a-eea7-e211-9fb6-00155dd0ea05}" />
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="6" type="26" schemaName="My Active Cases" displayName="My Active Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001028}" />
+        <Required key="6" type="26" schemaName="All Entitlements" displayName="All Entitlements" parentSchemaName="entitlement" parentDisplayName="Entitlement" solution="msdynce_Service (9.0.5.56)" id="{aa69e7e2-913a-4a5a-8609-8ca443554909}" />
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="7" type="26" schemaName="Recent Cases" displayName="Recent Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{ebd1d24a-eea7-e211-9fb6-00155dd0ea05}" />
+        <Required key="7" type="26" schemaName="My Open Opportunities" displayName="My Open Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003000}" />
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="8" type="26" schemaName="My Open Opportunities" displayName="My Open Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003000}" />
+        <Required key="8" type="26" schemaName="Recent Opportunities" displayName="Recent Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{9c3f7ee8-eca7-e211-9fb6-00155dd0ea05}" />
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="9" type="26" schemaName="All Entitlements" displayName="All Entitlements" parentSchemaName="entitlement" parentDisplayName="Entitlement" solution="msdynce_Service (9.0.5.56)" id="{aa69e7e2-913a-4a5a-8609-8ca443554909}" />
+        <Required key="9" type="26" schemaName="My Active Cases" displayName="My Active Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001028}" />
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="10" type="59" schemaName="Entitlements Expiration" displayName="Entitlements Expiration" parentSchemaName="entitlement" parentDisplayName="Entitlement" solution="msdynce_Service (9.0.5.56)" id="{fdb919bb-c6fc-4fc8-8fa5-67ace68e41d1}" />
+        <Required key="10" type="59" schemaName="Top Customers" displayName="Top Customers" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{8bc5fb18-48f2-4782-9e16-3d452fa4ddce}" />
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="11" type="59" schemaName="Case Mix (By Business Unit)" displayName="Case Mix (By Business Unit)" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{f10375a6-4893-de11-97d4-00155da3b01e}" />
+        <Required key="11" type="59" schemaName="Entitlements Expiration" displayName="Entitlements Expiration" parentSchemaName="entitlement" parentDisplayName="Entitlement" solution="msdynce_Service (9.0.5.56)" id="{fdb919bb-c6fc-4fc8-8fa5-67ace68e41d1}" />
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="12" type="59" schemaName="Top Customers" displayName="Top Customers" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{8bc5fb18-48f2-4782-9e16-3d452fa4ddce}" />
+        <Required key="12" type="59" schemaName="Case Mix (By Business Unit)" displayName="Case Mix (By Business Unit)" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{f10375a6-4893-de11-97d4-00155da3b01e}" />
         <Dependent key="1" type="60" displayName="Xrm CI Sample" parentDisplayName="Contact" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       </MissingDependency>
       <MissingDependency>

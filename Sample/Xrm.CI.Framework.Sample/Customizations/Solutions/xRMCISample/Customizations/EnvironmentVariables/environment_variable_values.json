@@ -1,0 +1,16 @@
+{
+  "EnvironmentVariableValues": [
+    {
+      "EnvironmentVariableDefinition.SchemaName": "ud_SampleSwitch",
+      "Value": "no"
+    },
+    {
+      "EnvironmentVariableDefinition.SchemaName": "ud_SampleJson",
+      "Value": "{}"
+    },
+    {
+      "EnvironmentVariableDefinition.SchemaName": "ud_SampleDecimal",
+      "Value": "23"
+    }
+  ]
+}
