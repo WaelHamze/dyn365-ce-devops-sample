@@ -1,2 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_ud_referencedata" />
+  <EntityRelationship Name="lk_ud_referencedata_createdby" />
+  <EntityRelationship Name="lk_ud_referencedata_modifiedby" />
+  <EntityRelationship Name="owner_ud_referencedata" />
+  <EntityRelationship Name="team_ud_referencedata" />
+  <EntityRelationship Name="user_ud_referencedata" />
+</EntityRelationships>

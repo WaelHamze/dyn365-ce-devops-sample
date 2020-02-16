@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.10528" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.13529" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>xRMCISample</UniqueName>
     <LocalizedNames>
       <LocalizedName description="xRMCISample" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.5</Version>
+    <Version>1.0.0.65</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>ultradynamics</UniqueName>
@@ -79,6 +79,7 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="ud_referencedata" behavior="0" />
       <RootComponent type="29" id="{8851d4a1-7aeb-48dc-afa3-0e6f27de04b2}" behavior="0" />
       <RootComponent type="60" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       <RootComponent type="61" schemaName="ud_/HTML/Dashboard.html" behavior="0" />
@@ -90,10 +91,10 @@
       <RootComponent type="92" id="{bbffd4c1-2d49-e811-a956-00224800510b}" behavior="0" />
       <RootComponent type="92" id="{fb3e63a1-c4b6-e811-a976-0022480050c6}" behavior="0" />
       <RootComponent type="95" id="{53d53d7d-c4b6-e811-a977-002248005d88}" behavior="0" />
-      <RootComponent type="380" id="{2987e5cf-7307-ea11-a811-000d3a86aa92}" behavior="0" />
-      <RootComponent type="380" id="{75d11fab-7307-ea11-a811-000d3a86aa92}" behavior="0" />
-      <RootComponent type="380" id="{da9af10a-7307-ea11-a811-000d3a86aa92}" behavior="0" />
-      <RootComponent type="380" id="{e99e9e98-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleDecimal" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleJson" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleSwitch" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleText" behavior="0" />
       <RootComponent type="381" id="{db39e2d5-7307-ea11-a811-000d3a86aa92}" behavior="0" />
       <RootComponent type="381" id="{e49af10a-7307-ea11-a811-000d3a86aa92}" behavior="0" />
       <RootComponent type="381" id="{fd9e9e98-7307-ea11-a811-000d3a86aa92}" behavior="0" />

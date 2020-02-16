@@ -2,14 +2,17 @@
   "EnvironmentVariableValues": [
     {
       "EnvironmentVariableDefinition.SchemaName": "ud_SampleSwitch",
+      "EnvironmentVariableValueId": "e49af10a-7307-ea11-a811-000d3a86aa92",
       "Value": "no"
     },
     {
       "EnvironmentVariableDefinition.SchemaName": "ud_SampleJson",
+      "EnvironmentVariableValueId": "fd9e9e98-7307-ea11-a811-000d3a86aa92",
       "Value": "{}"
     },
     {
       "EnvironmentVariableDefinition.SchemaName": "ud_SampleDecimal",
+      "EnvironmentVariableValueId": "db39e2d5-7307-ea11-a811-000d3a86aa92",
       "Value": "23"
     }
   ]

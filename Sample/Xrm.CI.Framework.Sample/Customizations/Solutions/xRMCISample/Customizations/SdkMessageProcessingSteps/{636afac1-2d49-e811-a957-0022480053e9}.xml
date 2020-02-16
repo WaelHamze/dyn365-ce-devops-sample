@@ -19,7 +19,7 @@
   <SdkMessageProcessingStepImages>
     <SdkMessageProcessingStepImage Name="">
       <SdkMessageProcessingStepImageId>{07aca23c-0698-e811-a96a-002248005d88}</SdkMessageProcessingStepImageId>
-      <Attributes>name,emailaddress1</Attributes>
+      <Attributes>emailaddress1,name</Attributes>
       <EntityAlias>Sample</EntityAlias>
       <ImageType>1</ImageType>
       <MessagePropertyName>id</MessagePropertyName>
