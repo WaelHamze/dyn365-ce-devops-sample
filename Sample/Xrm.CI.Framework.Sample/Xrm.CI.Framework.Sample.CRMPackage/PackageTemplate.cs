@@ -5,7 +5,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Crm.Sdk.Messages;
 using Microsoft.Uii.Common.Entities;
+using Microsoft.Xrm.Sdk;
+using Microsoft.Xrm.Sdk.Query;
 using Microsoft.Xrm.Tooling.PackageDeployment;
 using Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase;
 
@@ -77,8 +80,94 @@ namespace Xrm.CI.Framework.Sample.CRMPackage
         /// <returns></returns>
         public override bool AfterPrimaryImport()
         {
+            PublishTheme();
+
             return true; // Do nothing here/ 
         }
+
+        #region Methods
+
+        private void PublishTheme()
+        {
+            string themeName = "xRMCISample";
+            string logoName = "ud_/Images/logo.png";
+            bool publish = false;
+
+            QueryByAttribute qba = new QueryByAttribute("theme");
+            qba.Attributes.Add("name");
+            qba.Values.Add(themeName);
+            qba.ColumnSet = new ColumnSet("themeid", "isdefaulttheme", "logoid");
+
+            EntityCollection themes = base.CrmSvc.RetrieveMultiple(qba);
+
+            if (themes.Entities.Count == 0)
+            {
+                throw new Exception("Theme not found");
+            }
+
+            Entity theme = themes.Entities[0];
+
+            if (!(bool)theme.Attributes["isdefaulttheme"])
+            {
+                base.PackageLog.Log($"{themeName} is not published", TraceEventType.Information);
+
+                publish = true;
+            }
+
+            Entity logo = GetLogo(logoName);
+
+            if (!theme.Attributes.Contains("logoid"))
+            {
+                base.PackageLog.Log($"{logoName} is not set", TraceEventType.Information);
+
+                theme["logoid"] = logo.ToEntityReference();
+                publish = true;
+            }
+            else
+            {
+                if (logo.Id != ((EntityReference)theme["logoid"]).Id)
+                {
+                    base.PackageLog.Log($"{logoName} has changed", TraceEventType.Information);
+                    publish = true;
+                }
+                else
+                {
+                    base.PackageLog.Log($"{logoName} is same", TraceEventType.Verbose);
+                }
+            }
+
+            if (publish)
+            {
+                base.PackageLog.Log("Publishing Theme", TraceEventType.Verbose);
+
+                PublishThemeRequest req = new PublishThemeRequest();
+
+                base.CrmSvc.Execute(req);
+
+                base.PackageLog.Log("Published Theme", TraceEventType.Information);
+            }
+        }
+
+        private Entity GetLogo(string logoName)
+        {
+            QueryByAttribute qba = new QueryByAttribute("webresource");
+            qba.Attributes.Add("name");
+            qba.Values.Add(logoName);
+            qba.ColumnSet = new ColumnSet();
+
+            EntityCollection logos = base.CrmSvc.RetrieveMultiple(qba);
+
+            if (logos.Entities.Count == 0)
+            {
+                throw new Exception("Logo not found");
+            }
+
+            Entity logo = logos.Entities[0];
+
+            return logo;
+        }
+
+        #endregion
 
         #region Properties
 

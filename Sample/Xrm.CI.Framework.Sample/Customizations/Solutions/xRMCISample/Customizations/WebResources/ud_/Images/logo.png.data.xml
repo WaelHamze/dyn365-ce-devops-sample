@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{dad105ca-3faf-ea11-a812-000d3a0cc0cf}</WebResourceId>
+  <Name>ud_/Images/logo.png</Name>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0.0.68</IntroducedVersion>
+  <IsEnabledForMobileClient>1</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/ud_ImageslogopngDAD105CA-3FAF-EA11-A812-000D3A0CC0CF</FileName>
+</WebResource>

@@ -22,7 +22,6 @@
       <field updateCompare="true" displayname="Theme Name" name="name" type="string" />
       <field displayname="Title Text Color" name="headercolor" type="string" />
       <field displayname="Type" name="type" type="bool" />
-      <field displayname="Default Theme" name="isdefaulttheme" type="bool" />
       <field displayname="Control Hover Border Color" name="controlborder" type="string" />
       <field displayname="Background Color" name="backgroundcolor" type="string" />
       <field displayname="Accent Color" name="accentcolor" type="string" />

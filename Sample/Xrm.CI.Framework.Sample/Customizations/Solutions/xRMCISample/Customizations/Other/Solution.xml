@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.13529" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.18645" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>xRMCISample</UniqueName>
     <LocalizedNames>
       <LocalizedName description="xRMCISample" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.65</Version>
+    <Version>1.0.0.68</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>ultradynamics</UniqueName>
@@ -83,6 +83,7 @@
       <RootComponent type="29" id="{8851d4a1-7aeb-48dc-afa3-0e6f27de04b2}" behavior="0" />
       <RootComponent type="60" id="{0ac464f8-792f-4284-b693-f4908c33b743}" />
       <RootComponent type="61" schemaName="ud_/HTML/Dashboard.html" behavior="0" />
+      <RootComponent type="61" schemaName="ud_/Images/logo.png" behavior="0" />
       <RootComponent type="61" schemaName="ud_/JScript/Contact.js" behavior="0" />
       <RootComponent type="91" id="{e091c0c0-2d49-e811-a957-0022480050c6}" schemaName="Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf" behavior="0" />
       <RootComponent type="91" id="{ca934c19-3a47-e811-a956-00224800510b}" schemaName="Xrm.CI.Framework.Sample.WFActivities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d805730d823d6a57" behavior="0" />
