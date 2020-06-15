@@ -79,7 +79,7 @@
           "Name": "Xrm.CI.Framework.Sample.Plugins.ContactPreOperation",
           "MessageName": "Create",
           "Description": "Contact Pre Operation Step",
-          "CustomConfiguration": null,
+          "CustomConfiguration": "unsecure string dev",
           "FilteringAttributes": null,
           "ImpersonatingUserFullname": "",
           "Mode": "Synchronous",

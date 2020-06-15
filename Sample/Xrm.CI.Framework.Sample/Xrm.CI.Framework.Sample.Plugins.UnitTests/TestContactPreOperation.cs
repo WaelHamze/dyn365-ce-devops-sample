@@ -16,7 +16,9 @@ namespace Xrm.CI.Framework.Sample.UnitTests
 
             var contact = new Entity("contact") { Id = Guid.NewGuid() };
 
-            ctx.ExecutePluginWithTarget<ContactPreOperation>(contact);
+            ContactPreOperation p = new ContactPreOperation("unsecure", "secure");
+
+            ctx.ExecutePluginWithTarget(p, contact);
         }
     }
 }
