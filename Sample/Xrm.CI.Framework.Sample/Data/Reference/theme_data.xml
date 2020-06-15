@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<entity name="theme" displayname="Theme">
+  <records>
+    <record id="7d14c31d-d7ae-ea11-a812-000d3a0cc0cf">
+      <field name="navbarbackgroundcolor" value="#5A0BA9" />
+      <field name="navbarshelfcolor" value="#FFFFFF" />
+      <field name="pageheaderbackgroundcolor" value="#E6E6E6" />
+      <field name="panelheaderbackgroundcolor" value="#F5F5F5" />
+      <field name="selectedlinkeffect" value="#808080" />
+      <field name="statecode" value="0" />
+      <field name="statuscode" value="1" />
+      <field name="themeid" value="7d14c31d-d7ae-ea11-a812-000d3a0cc0cf" />
+      <field name="name" value="xRMCISample" />
+      <field name="headercolor" value="#5A0BA9" />
+      <field name="type" value="True" />
+      <field name="isdefaulttheme" value="True" />
+      <field name="controlborder" value="#BDC3C7" />
+      <field name="backgroundcolor" value="#FFFFFF" />
+      <field name="accentcolor" value="#000000" />
+      <field name="controlshade" value="#FFFFFF" />
+      <field name="defaultcustomentitycolor" value="#0B96A9" />
+      <field name="defaultentitycolor" value="#666666" />
+      <field name="exchangerate" value="1.0000000000" />
+      <field name="hoverlinkeffect" value="#BFBFBF" />
+      <field name="processcontrolcolor" value="#2A951F" />
+      <field name="globallinkcolor" value="#5A0BA9" />
+      <field name="logotooltip" value="xRM CI Sample" />
+      <field name="maincolor" value="#5A0BA9" />
+    </record>
+  </records>
+  <m2mrelationships />
+</entity>

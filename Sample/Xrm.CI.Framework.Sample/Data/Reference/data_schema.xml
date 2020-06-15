@@ -9,4 +9,36 @@
 &lt;condition attribute="statecode" operator="eq" value="0"/&gt;
 &lt;/filter&gt;</filter>
   </entity>
+  <entity name="theme" displayname="Theme" etc="2015" primaryidfield="themeid" primarynamefield="name" disableplugins="false">
+    <fields>
+      <field displayname="Navigation Bar Fill Color" name="navbarbackgroundcolor" type="string" />
+      <field displayname="Navigation Bar Shelf Fill Color" name="navbarshelfcolor" type="string" />
+      <field displayname="Page Header Fill Color" name="pageheaderbackgroundcolor" type="string" />
+      <field displayname="Panel Header Fill Color" name="panelheaderbackgroundcolor" type="string" />
+      <field displayname="Selected Link Color" name="selectedlinkeffect" type="string" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Theme" name="themeid" type="guid" primaryKey="true" />
+      <field updateCompare="true" displayname="Theme Name" name="name" type="string" />
+      <field displayname="Title Text Color" name="headercolor" type="string" />
+      <field displayname="Type" name="type" type="bool" />
+      <field displayname="Default Theme" name="isdefaulttheme" type="bool" />
+      <field displayname="Control Hover Border Color" name="controlborder" type="string" />
+      <field displayname="Background Color" name="backgroundcolor" type="string" />
+      <field displayname="Accent Color" name="accentcolor" type="string" />
+      <field displayname="Control Hover Fill Color" name="controlshade" type="string" />
+      <field displayname="Default Custom Entity Color" name="defaultcustomentitycolor" type="string" />
+      <field displayname="Default Entity Color" name="defaultentitycolor" type="string" />
+      <field displayname="ExchangeRate" name="exchangerate" type="decimal" />
+      <field displayname="Hover Link Color" name="hoverlinkeffect" type="string" />
+      <field displayname="Legacy Accent Color" name="processcontrolcolor" type="string" />
+      <field displayname="Link and Button Text Color" name="globallinkcolor" type="string" />
+      <field displayname="Logo Tooltip" name="logotooltip" type="string" />
+      <field displayname="Main Color" name="maincolor" type="string" />
+    </fields>
+    <relationships />
+    <filter>&lt;filter type="and"&gt;
+&lt;condition attribute="name" operator="eq" value="xRMCISample"/&gt;
+&lt;/filter&gt;</filter>
+  </entity>
 </entities>
