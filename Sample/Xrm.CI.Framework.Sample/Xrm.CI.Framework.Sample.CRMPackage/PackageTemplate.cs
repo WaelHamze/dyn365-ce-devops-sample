@@ -141,7 +141,7 @@ namespace Xrm.CI.Framework.Sample.CRMPackage
                 base.PackageLog.Log("Publishing Theme", TraceEventType.Verbose);
 
                 PublishThemeRequest req = new PublishThemeRequest();
-
+                req.Target = theme.ToEntityReference();
                 base.CrmSvc.Execute(req);
 
                 base.PackageLog.Log("Published Theme", TraceEventType.Information);
