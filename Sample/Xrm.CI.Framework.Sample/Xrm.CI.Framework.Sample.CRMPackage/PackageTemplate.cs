@@ -92,6 +92,7 @@ namespace Xrm.CI.Framework.Sample.CRMPackage
             string themeName = "xRMCISample";
             string logoName = "ud_/Images/logo.png";
             bool publish = false;
+            bool update = false;
 
             QueryByAttribute qba = new QueryByAttribute("theme");
             qba.Attributes.Add("name");
@@ -120,8 +121,8 @@ namespace Xrm.CI.Framework.Sample.CRMPackage
             {
                 base.PackageLog.Log($"{logoName} is not set", TraceEventType.Information);
 
-                theme["logoid"] = logo.ToEntityReference();
                 publish = true;
+                update = true;
             }
             else
             {
@@ -129,11 +130,21 @@ namespace Xrm.CI.Framework.Sample.CRMPackage
                 {
                     base.PackageLog.Log($"{logoName} has changed", TraceEventType.Information);
                     publish = true;
+                    update = true;
                 }
                 else
                 {
                     base.PackageLog.Log($"{logoName} is same", TraceEventType.Verbose);
                 }
+            }
+
+            if (update)
+            {
+                Entity logoUpdate = new Entity("theme", theme.Id);
+                logoUpdate["logoid"] = logo.ToEntityReference();
+                base.CrmSvc.Update(logoUpdate);
+
+                base.PackageLog.Log($"{logoName} Updated", TraceEventType.Information);
             }
 
             if (publish)
