@@ -3,9 +3,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Security;
 using System.Configuration;
 using Microsoft.Dynamics365.UIAutomation.Browser;
-using Microsoft.Dynamics365.UIAutomation.Api;
 using System.Collections.Generic;
 using OpenQA.Selenium;
+using Microsoft.Dynamics365.UIAutomation.Api.UCI;
 
 namespace Xrm.CI.Framework.Sample.UIAutomation
 {
@@ -38,39 +38,51 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
         [TestMethod]
         public void CreateNewContact()
         {
-            using (var xrmBrowser = new Browser(_options))
+            var client = new WebClient(_options);
+            try
             {
-                xrmBrowser.LoginPage.Login(_xrmUri, _username, _password);
-                xrmBrowser.GuidedHelp.CloseGuidedHelp();
-
-                xrmBrowser.ThinkTime(500);
-                xrmBrowser.Navigation.OpenSubArea("Sales", "Contacts");
-
-                xrmBrowser.ThinkTime(2000);
-                xrmBrowser.Grid.SwitchView("Active Contacts");
-
-                xrmBrowser.ThinkTime(1000);
-                xrmBrowser.CommandBar.ClickCommand("New");
-
-                xrmBrowser.ThinkTime(5000);
-
-                var fields = new List<Field>
+                using (var xrmApp = new XrmApp(client))
                 {
-                    new Field() {Id = "firstname", Value = "Wael"},
-                    new Field() {Id = "lastname", Value = "Test"}
-                };
-                xrmBrowser.Entity.SetValue(new CompositeControl() { Id = "fullname", Fields = fields });
-                xrmBrowser.Entity.SetValue("emailaddress1", "test@contoso.com");
-                xrmBrowser.Entity.SetValue("mobilephone", "555-555-5555");
-                xrmBrowser.Entity.SetValue("birthdate", DateTime.Parse("11/1/1983"));
-                xrmBrowser.Entity.SetValue(new OptionSet { Name = "preferredcontactmethodcode", Value = "Email" });
+                    xrmApp.OnlineLogin.Login(_xrmUri, _username, _password);
 
-                xrmBrowser.CommandBar.ClickCommand("Save");
-                xrmBrowser.ThinkTime(5000);
+                    xrmApp.Navigation.OpenApp("CRM Hub");
 
-                string screenShot = string.Format("{0}\\CreateNewContact.jpeg", TestContext.TestResultsDirectory);
-                xrmBrowser.TakeWindowScreenShot(screenShot, ScreenshotImageFormat.Jpeg);
-                TestContext.AddResultFile(screenShot);
+                    xrmApp.ThinkTime(500);
+                    xrmApp.Navigation.OpenSubArea("Sales", "Contacts");
+
+                    //xrmApp.ThinkTime(2000);
+                    //xrmApp.Grid.SwitchView("Active Contacts");
+
+                    xrmApp.ThinkTime(1000);
+                    xrmApp.CommandBar.ClickCommand("New");
+
+                    xrmApp.ThinkTime(2000);
+
+                    xrmApp.Entity.SetValue("firstname", "Wael");
+                    xrmApp.Entity.SetValue("lastname", "Test");
+                    xrmApp.Entity.SetValue("emailaddress1", "test@contoso.com");
+                    xrmApp.Entity.SetValue("mobilephone", "555-555-5555");
+
+                    xrmApp.Entity.SelectTab("Details");
+
+                    xrmApp.Entity.SetValue("birthdate", DateTime.Parse("11/1/1983"));
+                    xrmApp.Entity.SetValue(new OptionSet { Name = "preferredcontactmethodcode", Value = "Email" });
+
+                    xrmApp.CommandBar.ClickCommand("Save");
+                    xrmApp.ThinkTime(2000);
+
+                    string screenShot = string.Format("{0}\\CreateNewContact.jpeg", TestContext.TestResultsDirectory);
+
+                    client.Browser.TakeWindowScreenShot(screenShot, ScreenshotImageFormat.Jpeg);
+                    TestContext.AddResultFile(screenShot);
+                }
+            }
+            finally
+            {
+                if (client.Browser != null)
+                {
+                    client.Browser.Dispose();
+                }
             }
         }
     }
