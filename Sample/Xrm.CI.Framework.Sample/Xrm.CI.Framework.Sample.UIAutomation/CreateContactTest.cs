@@ -45,6 +45,8 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
                 {
                     xrmApp.OnlineLogin.Login(_xrmUri, _username, _password);
 
+                    TestContext.WriteLine("Login Successful");
+
                     xrmApp.Navigation.OpenApp("CRM Hub");
 
                     xrmApp.ThinkTime(500);
@@ -56,12 +58,14 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
                     xrmApp.ThinkTime(1000);
                     xrmApp.CommandBar.ClickCommand("New");
 
+                    TestContext.WriteLine("Entering Contact");
+
                     xrmApp.ThinkTime(2000);
 
                     xrmApp.Entity.SetValue("firstname", "Wael");
-                    xrmApp.Entity.SetValue("lastname", "Test");
-                    xrmApp.Entity.SetValue("emailaddress1", "test@contoso.com");
-                    xrmApp.Entity.SetValue("mobilephone", "555-555-5555");
+                    xrmApp.Entity.SetValue("lastname", DateTime.Now.ToString());
+                    xrmApp.Entity.SetValue("emailaddress1", new Random().Next(100000, 9900000).ToString() + "@contoso.com");
+                    xrmApp.Entity.SetValue("mobilephone", new Random().Next(100000, 9900000).ToString());
 
                     xrmApp.Entity.SelectTab("Details");
 
@@ -71,9 +75,13 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
                     xrmApp.CommandBar.ClickCommand("Save");
                     xrmApp.ThinkTime(2000);
 
+                    TestContext.WriteLine("Contact Saved");
+
                     string screenShot = string.Format("{0}\\CreateNewContact.jpeg", TestContext.TestResultsDirectory);
 
                     client.Browser.TakeWindowScreenShot(screenShot, ScreenshotImageFormat.Jpeg);
+
+                    TestContext.WriteLine($"Screenshot saved to: {screenShot}");
                     TestContext.AddResultFile(screenShot);
                 }
             }
