@@ -6,6 +6,8 @@ using Microsoft.Dynamics365.UIAutomation.Browser;
 using System.Collections.Generic;
 using OpenQA.Selenium;
 using Microsoft.Dynamics365.UIAutomation.Api.UCI;
+using System.IO;
+using System.Diagnostics;
 
 namespace Xrm.CI.Framework.Sample.UIAutomation
 {
@@ -77,11 +79,15 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
 
                     TestContext.WriteLine("Contact Saved");
 
-                    string screenShot = string.Format("{0}\\CreateNewContact.jpeg", TestContext.TestResultsDirectory);
+                    //string screenShot = string.Format("{0}\\CreateNewContact.jpeg", TestContext.TestResultsDirectory);
+
+                    string screenShot = string.Format("{0}\\CreateNewContact.jpeg", Directory.GetCurrentDirectory());
 
                     client.Browser.TakeWindowScreenShot(screenShot, ScreenshotImageFormat.Jpeg);
 
                     TestContext.WriteLine($"Screenshot saved to: {screenShot}");
+                    Debug.WriteLine($"Screenshot saved to: {screenShot}");
+
                     TestContext.AddResultFile(screenShot);
                 }
             }
