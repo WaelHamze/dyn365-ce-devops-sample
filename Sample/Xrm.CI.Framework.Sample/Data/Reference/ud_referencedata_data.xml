@@ -11,6 +11,11 @@
       <field name="ud_value" value="Value 1" />
       <field name="ud_referencedataid" value="b1daa38e-d349-ea11-a812-000d3a86aa92" />
     </record>
+    <record id="c705b0e7-f1b2-ea11-a812-000d3a0cc0cf">
+      <field name="ud_name" value="Hello" />
+      <field name="ud_value" value="Test" />
+      <field name="ud_referencedataid" value="c705b0e7-f1b2-ea11-a812-000d3a0cc0cf" />
+    </record>
     <record id="d032e0b8-d349-ea11-a812-000d3a86aa92">
       <field name="ud_name" value="Record 3" />
       <field name="ud_value" value="Value 3" />
