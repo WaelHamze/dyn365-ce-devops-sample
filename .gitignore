@@ -36,3 +36,4 @@
 *.user
 /Sample/Xrm.CI.Framework.Sample/Data/bin/Debug
 /Sample/Xrm.CI.Framework.Sample/Data/data.zip
+/Sample/Xrm.CI.Framework.Sample/Data/obj/Release
