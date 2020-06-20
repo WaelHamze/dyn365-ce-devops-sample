@@ -13,7 +13,6 @@
       <field name="name" value="xRMCISample" />
       <field name="headercolor" value="#5A0BA9" />
       <field name="type" value="True" />
-      <field name="isdefaulttheme" value="True" />
       <field name="controlborder" value="#BDC3C7" />
       <field name="backgroundcolor" value="#FFFFFF" />
       <field name="accentcolor" value="#000000" />
