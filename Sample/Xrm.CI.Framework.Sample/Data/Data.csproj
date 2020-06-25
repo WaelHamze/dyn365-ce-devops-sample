@@ -53,6 +53,7 @@
     <Content Include="Reference\theme_data.xml" />
     <Content Include="Reference\ud_referencedata_data.xml" />
     <Content Include="Reference\[Content_Types].xml" />
+    <Content Include="Schema.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

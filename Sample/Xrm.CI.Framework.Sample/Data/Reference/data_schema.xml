@@ -4,10 +4,9 @@
       <field displayname="Name" name="ud_name" type="string" customfield="true" />
       <field displayname="Value" name="ud_value" type="string" customfield="true" />
       <field displayname="Reference Data" name="ud_referencedataid" type="guid" primaryKey="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
     </fields>
-    <filter>&lt;filter type="and"&gt;
-&lt;condition attribute="statecode" operator="eq" value="0"/&gt;
-&lt;/filter&gt;</filter>
   </entity>
   <entity name="theme" displayname="Theme" etc="2015" primaryidfield="themeid" primarynamefield="name" disableplugins="false">
     <fields>

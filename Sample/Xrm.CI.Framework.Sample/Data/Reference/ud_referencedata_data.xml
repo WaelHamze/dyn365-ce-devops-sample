@@ -1,25 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <entity name="ud_referencedata" displayname="Reference Data">
   <records>
+    <record id="030fdfc4-d349-ea11-a812-000d3a86aa92">
+      <field name="ud_name" value="In Active Record" />
+      <field name="ud_value" value="Inactive Value" />
+      <field name="ud_referencedataid" value="030fdfc4-d349-ea11-a812-000d3a86aa92" />
+      <field name="statecode" value="1" />
+      <field name="statuscode" value="2" />
+    </record>
     <record id="9262949a-d349-ea11-a812-000d3a86aa92">
       <field name="ud_name" value="Record 2" />
       <field name="ud_value" value="Value 2" />
       <field name="ud_referencedataid" value="9262949a-d349-ea11-a812-000d3a86aa92" />
+      <field name="statecode" value="1" />
+      <field name="statuscode" value="2" />
     </record>
     <record id="b1daa38e-d349-ea11-a812-000d3a86aa92">
       <field name="ud_name" value="Record 1" />
       <field name="ud_value" value="Value 1" />
       <field name="ud_referencedataid" value="b1daa38e-d349-ea11-a812-000d3a86aa92" />
+      <field name="statecode" value="0" />
+      <field name="statuscode" value="1" />
     </record>
     <record id="c705b0e7-f1b2-ea11-a812-000d3a0cc0cf">
       <field name="ud_name" value="Hello" />
       <field name="ud_value" value="Test" />
       <field name="ud_referencedataid" value="c705b0e7-f1b2-ea11-a812-000d3a0cc0cf" />
+      <field name="statecode" value="0" />
+      <field name="statuscode" value="1" />
     </record>
     <record id="d032e0b8-d349-ea11-a812-000d3a86aa92">
       <field name="ud_name" value="Record 3" />
       <field name="ud_value" value="Value 3" />
       <field name="ud_referencedataid" value="d032e0b8-d349-ea11-a812-000d3a86aa92" />
+      <field name="statecode" value="0" />
+      <field name="statuscode" value="1" />
     </record>
   </records>
   <m2mrelationships />
