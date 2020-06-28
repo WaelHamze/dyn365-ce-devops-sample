@@ -93,6 +93,33 @@
         }
       ],
       "WorkflowActivityGroupName": null
+    },
+    {
+      "Id": "7A6DEB3E-8CDD-4D0C-AD6E-6135EEC3AC96",
+      "Description": "Contact Post Create Async",
+      "Name": "Xrm.CI.Framework.Sample.Plugins.ContactPostCreateAsync",
+      "FriendlyName": "Contact Post Create Async",
+      "TypeName": "Xrm.CI.Framework.Sample.Plugins.ContactPostCreateAsync",
+      "Steps": [
+        {
+          "Id": "F26F9906-B428-4438-A829-FFDADA6CB690",
+          "Name": "Xrm.CI.Framework.Sample.Plugins.ContactPostCreateAsync",
+          "MessageName": "Create",
+          "Description": "Contact Post Create Async",
+          "CustomConfiguration": "",
+          "FilteringAttributes": null,
+          "ImpersonatingUserFullname": "",
+          "Mode": "Asynchronous",
+          "PrimaryEntityName": "contact",
+          "Rank": 1,
+          "Stage": "Postoperation",
+          "SupportedDeployment": "ServerOnly",
+          "AsyncAutoDelete": false,
+          "StateCode": "Enabled",
+          "Images": []
+        }
+      ],
+      "WorkflowActivityGroupName": null
     }
   ]
 }

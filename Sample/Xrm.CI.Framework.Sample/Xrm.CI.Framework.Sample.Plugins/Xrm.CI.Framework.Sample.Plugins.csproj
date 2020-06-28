@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="AccountSampleActionPreOperation.cs" />
     <Compile Include="AccountPostCreateAsync.cs" />
+    <Compile Include="ContactPostCreateAsync.cs" />
     <Compile Include="ContactPreOperation.cs" />
     <None Include="GetServiceEndpoints.ps1" />
     <None Include="packages.config" />

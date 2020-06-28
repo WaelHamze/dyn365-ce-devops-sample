@@ -54,9 +54,6 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
                     xrmApp.ThinkTime(500);
                     xrmApp.Navigation.OpenSubArea("Sales", "Contacts");
 
-                    //xrmApp.ThinkTime(2000);
-                    //xrmApp.Grid.SwitchView("Active Contacts");
-
                     xrmApp.ThinkTime(1000);
                     xrmApp.CommandBar.ClickCommand("New");
 
@@ -78,8 +75,6 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
                     xrmApp.ThinkTime(2000);
 
                     TestContext.WriteLine("Contact Saved");
-
-                    //string screenShot = string.Format("{0}\\CreateNewContact.jpeg", TestContext.TestResultsDirectory);
 
                     string screenShot = string.Format("{0}\\CreateNewContact.jpeg", Directory.GetCurrentDirectory());
 
