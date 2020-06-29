@@ -28,7 +28,7 @@ namespace Xrm.CI.Framework.Sample.IntegrationTests
                 c.Id = svc.Create(c);
 
                 //Validate
-                Thread.Sleep(1000);
+                Thread.Sleep(5000);
 
                 QueryByAttribute query = new QueryByAttribute("phonecall");
                 query.Attributes.Add("regardingobjectid");
