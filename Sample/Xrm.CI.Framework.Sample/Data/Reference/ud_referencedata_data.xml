@@ -36,6 +36,12 @@
       <field name="statecode" value="0" />
       <field name="statuscode" value="1" />
     </record>
+    <record id="fd78d72d-86b7-ea11-a812-000d3a0cc0cf">
+      <field name="ud_name" value="REcord 4" />
+      <field name="ud_referencedataid" value="fd78d72d-86b7-ea11-a812-000d3a0cc0cf" />
+      <field name="statecode" value="0" />
+      <field name="statuscode" value="1" />
+    </record>
   </records>
   <m2mrelationships />
 </entity>

@@ -13,6 +13,10 @@
       <Description>Account Plugin for SampleAction</Description>
       <FriendlyName>Account Plugin for SampleAction</FriendlyName>
     </PluginType>
+    <PluginType AssemblyQualifiedName="Xrm.CI.Framework.Sample.Plugins.ContactPostCreateAsync, Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf" PluginTypeId="7a6deb3e-8cdd-4d0c-ad6e-6135eec3ac96" Name="Xrm.CI.Framework.Sample.Plugins.ContactPostCreateAsync">
+      <Description>Contact Post Create Async</Description>
+      <FriendlyName>Contact Post Create Async</FriendlyName>
+    </PluginType>
     <PluginType AssemblyQualifiedName="Xrm.CI.Framework.Sample.Plugins.ContactPreOperation, Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf" PluginTypeId="656afac1-2d49-e811-a957-0022480053e9" Name="Xrm.CI.Framework.Sample.Plugins.ContactPreOperation">
       <Description>Contact Pre Operation Plugin</Description>
       <FriendlyName>Contact Pre Operation Plugin</FriendlyName>
