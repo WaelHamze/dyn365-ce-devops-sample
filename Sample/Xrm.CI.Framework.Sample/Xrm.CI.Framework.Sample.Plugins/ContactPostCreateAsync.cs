@@ -29,7 +29,7 @@ namespace Xrm.CI.Framework.Sample.Plugins
                 var target = context.InputParameters["Target"] as Entity;
 
                 Entity call = new Entity("phonecall");
-                call["subject"] = "New phonecall";
+                call["subject"] = "New phonecall for Contact";
                 call["regardingobjectid"] = target.ToEntityReference();
 
                 Guid callId = service.Create(call);
