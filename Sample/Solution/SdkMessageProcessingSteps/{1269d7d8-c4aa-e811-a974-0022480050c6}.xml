@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Xrm.CI.Framework.Sample.Plugins.AccountSampleActionPreOperation: ud_SampleAction of account" SdkMessageProcessingStepId="{1269d7d8-c4aa-e811-a974-0022480050c6}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SdkMessageId>8b26f529-c3aa-e811-a972-0022480053e9</SdkMessageId>
+  <PluginTypeName>Xrm.CI.Framework.Sample.Plugins.AccountSampleActionPreOperation, Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf</PluginTypeName>
+  <PluginTypeId>fad9406c-6c33-49e4-b8ff-39253ac9037c</PluginTypeId>
+  <PrimaryEntity>account</PrimaryEntity>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <Description>Xrm.CI.Framework.Sample.Plugins.AccountSampleActionPreOperation: ud_SampleAction of account</Description>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>0</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>20</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>
