@@ -35,14 +35,14 @@ jobs:
         with:
           environment-url: ${{ secrets.dev_url }}
           user-name: ${{ secrets.dev_username }}
-          password-secret: ${{ secrets.password }}
+          password-secret: ${{ secrets.dev_password }}
 
       - name: export-solution action
         uses: microsoft/powerplatform-actions/export-solution@v0
         with:
           environment-url: ${{ secrets.dev_url }}
           user-name: ${{ secrets.dev_username }}
-          password-secret: ${{ secrets.password }}
+          password-secret: ${{ secrets.dev_password }}
           solution-name: xRMCISample
           solution-output-file: out/exported/xRMCISample.zip
 
