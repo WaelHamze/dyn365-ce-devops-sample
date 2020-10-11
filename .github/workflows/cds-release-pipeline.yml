@@ -18,6 +18,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      
+      # Enable long path to support long file path in CDS solutions
+      - name: Support longpaths
+        run: git config --system core.longpaths true
+      
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
