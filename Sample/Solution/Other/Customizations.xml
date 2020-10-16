@@ -16,6 +16,15 @@
   <SdkMessageProcessingSteps />
   <ServiceEndpoints />
   <EntityDataProviders />
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="ud_sharedcommondataservice_3d28c">
+      <connectionreferencedisplayname>Common Data Service</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataservice</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
   <Languages>
     <Language>1033</Language>
     <Language>1045</Language>
