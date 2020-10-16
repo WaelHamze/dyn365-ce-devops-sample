@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.23465" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.23744" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>xRMCISample</UniqueName>
     <LocalizedNames>
       <LocalizedName description="xRMCISample" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.1.9</Version>
+    <Version>1.0.0.4</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>ultradynamics</UniqueName>
@@ -80,6 +80,7 @@
     <RootComponents>
       <RootComponent type="1" schemaName="contact" behavior="1" />
       <RootComponent type="1" schemaName="ud_referencedata" behavior="0" />
+      <RootComponent type="29" id="{771332b4-210f-eb11-a813-002248005e55}" behavior="0" />
       <RootComponent type="29" id="{8851d4a1-7aeb-48dc-afa3-0e6f27de04b2}" behavior="0" />
       <RootComponent type="29" id="{bbba6fa1-4ab2-ea11-a812-002248005e55}" behavior="0" />
       <RootComponent type="60" id="{18710896-19b5-ea11-a812-000d3a0cc0cf}" behavior="0" />
