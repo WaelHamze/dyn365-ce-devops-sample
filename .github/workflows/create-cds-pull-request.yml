@@ -51,7 +51,7 @@ jobs:
         with:
           solution-file: out/exported/xRMCISample.zip
           solution-folder: out/solutions/xRMCISample
-          solution-type: 'Unmanaged'
+          solution-type: 'Both'
           overwrite-files: true
 
       - name: branch-solution, prepare it for a PullRequest
