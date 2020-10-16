@@ -45,6 +45,17 @@ jobs:
           password-secret: ${{ secrets.dev_password }}
           solution-name: xRMCISample
           solution-output-file: out/exported/xRMCISample.zip
+          
+
+      - name: export-solution action managed
+        uses: microsoft/powerplatform-actions/export-solution@v0
+        with:
+          environment-url: ${{ secrets.dev_url }}
+          user-name: ${{ secrets.dev_username }}
+          password-secret: ${{ secrets.dev_password }}
+          solution-name: xRMCISample
+          solution-output-file: out/exported/xRMCISample_managed.zip
+          managed: true
 
       - name: unpack-solution action
         uses: microsoft/powerplatform-actions/unpack-solution@v0
