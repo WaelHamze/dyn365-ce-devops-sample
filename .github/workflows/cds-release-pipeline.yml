@@ -33,7 +33,7 @@ jobs:
       - name: Pack Sample solution
         uses: microsoft/powerplatform-actions/pack-solution@v0
         with:
-          solution-folder: Sample/Soluion
+          solution-folder: Sample/Solution
           solution-file: out/solutions/xRMCISample.zip
           solution-type: Managed
           
