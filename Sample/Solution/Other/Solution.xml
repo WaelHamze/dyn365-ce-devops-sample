@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.23744" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.24940" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>xRMCISample</UniqueName>
     <LocalizedNames>
@@ -95,6 +95,14 @@
       <RootComponent type="92" id="{f26f9906-b428-4438-a829-ffdada6cb690}" behavior="0" />
       <RootComponent type="92" id="{fb3e63a1-c4b6-e811-a976-0022480050c6}" behavior="0" />
       <RootComponent type="95" id="{53d53d7d-c4b6-e811-a977-002248005d88}" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleDecimal" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleJson" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleSwitch" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleText" behavior="0" />
+      <RootComponent type="380" schemaName="ud_Test No Value" behavior="0" />
+      <RootComponent type="381" id="{db39e2d5-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+      <RootComponent type="381" id="{e49af10a-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+      <RootComponent type="381" id="{fd9e9e98-7307-ea11-a811-000d3a86aa92}" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
