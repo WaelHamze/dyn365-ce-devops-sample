@@ -34,7 +34,25 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
         {
             BrowserType = BrowserType.Chrome,
             PrivateMode = true,
-            FireEvents = true
+            FireEvents = false,
+            Headless = Boolean.Parse(ConfigurationManager.AppSettings["Headless"]),
+            UserAgent = false,
+            DefaultThinkTime = 2000,
+            UCITestMode = true,
+            UCIPerformanceMode = true,
+            DisableExtensions = false,
+            DisableFeatures = false,
+            DisablePopupBlocking = false,
+            DisableSettingsWindow = false,
+            EnableJavascript = false,
+            NoSandbox = false,
+            DisableGpu = false,
+            DumpDom = false,
+            EnableAutomation = false,
+            DisableImplSidePainting = false,
+            DisableDevShmUsage = false,
+            DisableInfoBars = false,
+            TestTypeBrowser = false
         };
 
         [TestMethod]
@@ -45,12 +63,15 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
             {
                 using (var xrmApp = new XrmApp(client))
                 {
-                    xrmApp.OnlineLogin.Login(_xrmUri, _username, _password);
 
+                    //Setup
+                    xrmApp.OnlineLogin.Login(_xrmUri, _username, _password);
                     TestContext.WriteLine("Login Successful");
 
-                    xrmApp.Navigation.OpenApp("CRM Hub");
+                    xrmApp.Navigation.OpenApp("xRMCISample");
 
+
+                    //Act
                     xrmApp.ThinkTime(500);
                     xrmApp.Navigation.OpenSubArea("Sales", "Contacts");
 
@@ -74,20 +95,29 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
                     xrmApp.CommandBar.ClickCommand("Save");
                     xrmApp.ThinkTime(2000);
 
+
+                    //Verify
                     TestContext.WriteLine("Contact Saved");
 
-                    string screenShot = string.Format("{0}\\CreateNewContact.jpeg", Directory.GetCurrentDirectory());
+                    string notes = xrmApp.Entity.GetValue("description");
 
-                    client.Browser.TakeWindowScreenShot(screenShot, ScreenshotImageFormat.Jpeg);
-
-                    TestContext.WriteLine($"Screenshot saved to: {screenShot}");
-                    Debug.WriteLine($"Screenshot saved to: {screenShot}");
-
-                    TestContext.AddResultFile(screenShot);
+                    Assert.IsNotNull(notes);
                 }
             }
             finally
             {
+                
+                string screenShot = string.Format("{0}\\CreateNewContact.jpeg", Directory.GetCurrentDirectory());
+
+                client.Browser.TakeWindowScreenShot(screenShot, ScreenshotImageFormat.Jpeg);
+
+                TestContext.WriteLine($"Screenshot saved to: {screenShot}");
+                Debug.WriteLine($"Screenshot saved to: {screenShot}");
+
+                TestContext.AddResultFile(screenShot);
+
+
+                //Clean up
                 if (client.Browser != null)
                 {
                     client.Browser.Dispose();

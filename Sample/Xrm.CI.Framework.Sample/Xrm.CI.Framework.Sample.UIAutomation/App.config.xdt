@@ -7,5 +7,7 @@
          xdt:Transform="InsertIfMissing" xdt:Locator="Match(key)" />
     <add key="CRMUrl" value="@@CrmUrl@@"
          xdt:Transform="InsertIfMissing" xdt:Locator="Match(key)" />
+    <add key="Headless" value="@@Headless@@"
+     xdt:Transform="Replace" xdt:Locator="Match(key)" />
   </appSettings>
 </configuration>
