@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definition IntroducedVersion="1.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SchemaName>ud_Test No Value</SchemaName>
+  <IsRequired>0</IsRequired>
+  <Type>100000000</Type>
+  <DefaultValue xsi:nil="true"></DefaultValue>
+  <DisplayName>
+    <LocalizedNames>
+      <LocalizedName description="TestNoValue" languagecode="1033" />
+    </LocalizedNames>
+  </DisplayName>
+  <Description>
+    <LocalizedNames>
+      <LocalizedName description="Test" languagecode="1033" />
+    </LocalizedNames>
+  </Description>
+</Definition>

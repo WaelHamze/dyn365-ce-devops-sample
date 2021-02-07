@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.1.0.24940" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>xRMCISample</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="xRMCISample" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.5</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>ultradynamics</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Ultra Dynamics" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>ud</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>89915</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="ud_referencedata" behavior="0" />
+      <RootComponent type="29" id="{771332b4-210f-eb11-a813-002248005e55}" behavior="0" />
+      <RootComponent type="29" id="{8851d4a1-7aeb-48dc-afa3-0e6f27de04b2}" behavior="0" />
+      <RootComponent type="29" id="{bbba6fa1-4ab2-ea11-a812-002248005e55}" behavior="0" />
+      <RootComponent type="60" id="{18710896-19b5-ea11-a812-000d3a0cc0cf}" behavior="0" />
+      <RootComponent type="61" schemaName="ud_/HTML/Dashboard.html" behavior="0" />
+      <RootComponent type="61" schemaName="ud_/Images/logo.png" behavior="0" />
+      <RootComponent type="61" schemaName="ud_/JScript/Contact.js" behavior="0" />
+      <RootComponent type="91" id="{e091c0c0-2d49-e811-a957-0022480050c6}" schemaName="Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf" behavior="0" />
+      <RootComponent type="91" id="{ca934c19-3a47-e811-a956-00224800510b}" schemaName="Xrm.CI.Framework.Sample.WFActivities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d805730d823d6a57" behavior="0" />
+      <RootComponent type="92" id="{1269d7d8-c4aa-e811-a974-0022480050c6}" behavior="0" />
+      <RootComponent type="92" id="{636afac1-2d49-e811-a957-0022480053e9}" behavior="0" />
+      <RootComponent type="92" id="{bbffd4c1-2d49-e811-a956-00224800510b}" behavior="0" />
+      <RootComponent type="92" id="{f26f9906-b428-4438-a829-ffdada6cb690}" behavior="0" />
+      <RootComponent type="92" id="{fb3e63a1-c4b6-e811-a976-0022480050c6}" behavior="0" />
+      <RootComponent type="95" id="{53d53d7d-c4b6-e811-a977-002248005d88}" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleDecimal" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleJson" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleSwitch" behavior="0" />
+      <RootComponent type="380" schemaName="ud_SampleText" behavior="0" />
+      <RootComponent type="380" schemaName="ud_Test No Value" behavior="0" />
+      <RootComponent type="381" id="{db39e2d5-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+      <RootComponent type="381" id="{e49af10a-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+      <RootComponent type="381" id="{fd9e9e98-7307-ea11-a811-000d3a86aa92}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="1" type="60" displayName="xRMCISample" parentDisplayName="Contact" id="{18710896-19b5-ea11-a812-000d3a0cc0cf}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

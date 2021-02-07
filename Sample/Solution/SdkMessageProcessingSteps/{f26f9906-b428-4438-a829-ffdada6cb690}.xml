@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Xrm.CI.Framework.Sample.Plugins.ContactPostCreateAsync" SdkMessageProcessingStepId="{f26f9906-b428-4438-a829-ffdada6cb690}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+  <PluginTypeName>Xrm.CI.Framework.Sample.Plugins.ContactPostCreateAsync, Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf</PluginTypeName>
+  <PluginTypeId>7a6deb3e-8cdd-4d0c-ad6e-6135eec3ac96</PluginTypeId>
+  <PrimaryEntity>contact</PrimaryEntity>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <Description>Contact Post Create Async</Description>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>1</Mode>
+  <Rank>1</Rank>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>

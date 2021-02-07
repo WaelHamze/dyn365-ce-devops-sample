@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf" PluginAssemblyId="e091c0c0-2d49-e811-a957-0022480050c6" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/XrmCIFrameworkSamplePlugins-E091C0C0-2D49-E811-A957-0022480050C6/XrmCIFrameworkSamplePlugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="Xrm.CI.Framework.Sample.Plugins.AccountPostCreateAsync, Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf" PluginTypeId="b8ffd4c1-2d49-e811-a956-00224800510b" Name="Xrm.CI.Framework.Sample.Plugins.AccountPostCreateAsync">
+      <Description>Account Post Create Async Plugin</Description>
+      <FriendlyName>Account Post Create Async Plugin</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Xrm.CI.Framework.Sample.Plugins.AccountSampleActionPreOperation, Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf" PluginTypeId="fad9406c-6c33-49e4-b8ff-39253ac9037c" Name="Xrm.CI.Framework.Sample.Plugins.AccountSampleActionPreOperation">
+      <Description>Account Plugin for SampleAction</Description>
+      <FriendlyName>Account Plugin for SampleAction</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Xrm.CI.Framework.Sample.Plugins.ContactPostCreateAsync, Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf" PluginTypeId="7a6deb3e-8cdd-4d0c-ad6e-6135eec3ac96" Name="Xrm.CI.Framework.Sample.Plugins.ContactPostCreateAsync">
+      <Description>Contact Post Create Async</Description>
+      <FriendlyName>Contact Post Create Async</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Xrm.CI.Framework.Sample.Plugins.ContactPreOperation, Xrm.CI.Framework.Sample.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c720feec9a542abf" PluginTypeId="656afac1-2d49-e811-a957-0022480053e9" Name="Xrm.CI.Framework.Sample.Plugins.ContactPreOperation">
+      <Description>Contact Pre Operation Plugin</Description>
+      <FriendlyName>Contact Pre Operation Plugin</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>
