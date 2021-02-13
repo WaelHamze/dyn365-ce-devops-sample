@@ -52,7 +52,9 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
             DisableImplSidePainting = false,
             DisableDevShmUsage = false,
             DisableInfoBars = false,
-            TestTypeBrowser = false
+            TestTypeBrowser = false,
+            Height = 1080,
+            Width = 1920
         };
 
         [TestMethod]
@@ -115,7 +117,6 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
                 Debug.WriteLine($"Screenshot saved to: {screenShot}");
 
                 TestContext.AddResultFile(screenShot);
-
 
                 //Clean up
                 if (client.Browser != null)
