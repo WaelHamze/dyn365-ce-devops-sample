@@ -104,20 +104,20 @@ namespace Xrm.CI.Framework.Sample.UIAutomation
                     string notes = xrmApp.Entity.GetValue("description");
 
                     Assert.IsNotNull(notes);
+
+                    //Generate sceenshot
+                    string screenShot = string.Format("{0}\\CreateNewContact.jpeg", Directory.GetCurrentDirectory());
+
+                    client.Browser.TakeWindowScreenShot(screenShot, ScreenshotImageFormat.Jpeg);
+
+                    TestContext.WriteLine($"Screenshot saved to: {screenShot}");
+                    Debug.WriteLine($"Screenshot saved to: {screenShot}");
+
+                    TestContext.AddResultFile(screenShot);
                 }
             }
             finally
             {
-                
-                string screenShot = string.Format("{0}\\CreateNewContact.jpeg", Directory.GetCurrentDirectory());
-
-                client.Browser.TakeWindowScreenShot(screenShot, ScreenshotImageFormat.Jpeg);
-
-                TestContext.WriteLine($"Screenshot saved to: {screenShot}");
-                Debug.WriteLine($"Screenshot saved to: {screenShot}");
-
-                TestContext.AddResultFile(screenShot);
-
                 //Clean up
                 if (client.Browser != null)
                 {
