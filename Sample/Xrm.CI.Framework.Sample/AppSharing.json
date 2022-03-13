@@ -1,0 +1,14 @@
+{
+  "AppSharing": [
+    {
+      "AppName": "TestApp",
+      "ShareWith": [
+        {
+          "PrincipalType": "Group",
+          "Principal": "CRMDev",
+          "RoleName": "CanEdit"
+        }
+      ]
+    }
+  ]
+}
