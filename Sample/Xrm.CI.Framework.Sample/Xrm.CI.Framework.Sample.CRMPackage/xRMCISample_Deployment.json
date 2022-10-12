@@ -1,0 +1,33 @@
+{
+  "EnvironmentVariables": [
+    {
+      "SchemaName": "ud_SampleDecimal",
+      "Value": "13"
+    },
+    {
+      "SchemaName": "ud_SampleSwitch",
+      "Value": ""
+    },
+    {
+      "SchemaName": "ud_SampleText",
+      "Value": "@@ud_SampleText@@"
+    }
+  ],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "ud_sharedcommondataserviceforapps_7a6b8",
+      "ConnectionId": "@@shared_commondataserviceforapps@@",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+    },
+    {
+      "LogicalName": "ud_sharedcommondataservice_3d28c",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataservice"
+    },
+    {
+      "LogicalName": "ud_sharedoffice365users_86252",
+      "ConnectionId": "949af400679b4039be826966309745c7",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_office365users"
+    }
+  ]
+}
