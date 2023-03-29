@@ -5,8 +5,13 @@
       "ShareWith": [
         {
           "PrincipalType": "Group",
-          "Principal": "CRMDev",
+          "Principal": "@@AppOwnerGroup@@",
           "RoleName": "CanEdit"
+        },
+        {
+          "PrincipalType": "Group",
+          "Principal": "@@AppUserGroup@@",
+          "RoleName": "CanView"
         }
       ]
     }

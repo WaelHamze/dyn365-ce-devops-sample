@@ -1,0 +1,36 @@
+{
+  "Flows": [
+    {
+      "FlowName": "CreateTaskForContact",
+      "ShareWith": [
+        {
+          "PrincipalType": "User",
+          "Principal": "@@FlowUser@@",
+          "RoleName": "Owner"
+        },
+        {
+          "PrincipalType": "Group",
+          "Principal": "@@FlowGroup@@",
+          "RoleName": "CanEdit"
+        }
+      ],
+      "State":  "On"
+    },
+    {
+      "FlowName": "Get User Info",
+      "ShareWith": [
+        {
+          "PrincipalType": "User",
+          "Principal": "@@FlowUser@@",
+          "RoleName": "Owner"
+        },
+        {
+          "PrincipalType": "Group",
+          "Principal": "@@FlowGroup@@",
+          "RoleName": "CanEdit"
+        }
+      ],
+      "State": "Off"
+    }
+  ]
+}
