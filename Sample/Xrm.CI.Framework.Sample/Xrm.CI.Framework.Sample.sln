@@ -30,7 +30,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{CA4ED9A3-8717-4D8B-B893-3C98A57D6DB5}"
 	ProjectSection(SolutionItems) = preProject
-		AppSharing.json = AppSharing.json
+		Apps.json = Apps.json
 		Flows.json = Flows.json
 		xRMCISample_Deployment.json = xRMCISample_Deployment.json
 	EndProjectSection
