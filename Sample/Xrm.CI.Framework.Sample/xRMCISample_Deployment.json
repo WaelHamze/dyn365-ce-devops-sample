@@ -21,7 +21,7 @@
     },
     {
       "LogicalName": "ud_sharedoffice365users_86252",
-      "ConnectionId": "949af400679b4039be826966309745c7",
+      "ConnectionId": "@@ud_sharedoffice365users@@",
       "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_office365users"
     }
   ]
