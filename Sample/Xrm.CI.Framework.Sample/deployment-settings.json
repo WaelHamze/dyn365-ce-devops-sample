@@ -1,0 +1,28 @@
+{
+  "EnvironmentVariables": [
+    {
+      "SchemaName": "ud_SampleDecimal",
+      "Value": ""
+    },
+    {
+      "SchemaName": "ud_SampleSwitch",
+      "Value": ""
+    },
+    {
+      "SchemaName": "ud_SampleText",
+      "Value": ""
+    }
+  ],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "ud_sharedcommondataserviceforapps_7a6b8",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+    },
+    {
+      "LogicalName": "ud_sharedoffice365users_86252",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_office365users"
+    }
+  ]
+}

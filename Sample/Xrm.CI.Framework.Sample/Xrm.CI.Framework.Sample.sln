@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xrm.CI.Framework.Sample.Int
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{E30B24F8-8227-4ECE-BE6D-002FEEEFD4F1}"
 	ProjectSection(SolutionItems) = preProject
+		Create_DeploymentSettings.ps1 = Create_DeploymentSettings.ps1
+		deployment-settings.json = deployment-settings.json
 		Scripts\UpdateXrmCIFramework.ps1 = Scripts\UpdateXrmCIFramework.ps1
 	EndProjectSection
 EndProject
